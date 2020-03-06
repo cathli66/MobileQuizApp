@@ -10,6 +10,7 @@ import android.widget.TextView;
 public class QuizActivity extends AppCompatActivity {
     TextView timer;
     CountDownTimer countdown;
+    int timeLeft = 300000; // 5 min in milliseconds
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
