@@ -3,4 +3,12 @@
     <string name="welcome">Welcome to the Pokemon Quiz!</string>
     <string name="start">Start Quiz!</string>
     <string name="timestart">5:00</string>
+    <string name="q1c1">Togekiss</string>
+    <string name="q2c3">Empoleon</string>
+    <string name="q1c2">Cleffa</string>
+    <string name="q2c4">Seaking</string>
+    <string name="q1c3">Tropius</string>
+    <string name="q1c4">Tynamo</string>
+    <string name="q2c1">Prinplup</string>
+    <string name="q2c2">Keldeo</string>
 </resources>

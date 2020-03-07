@@ -4,18 +4,45 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 import android.os.CountDownTimer;
-import android.widget.Chronometer;
 import android.widget.TextView;
 
 public class QuizActivity extends AppCompatActivity {
     TextView timer;
     CountDownTimer countdown;
-    int timeLeft = 300000; // 5 min in milliseconds
+    long timeLeft = 300000; // 5 min in milliseconds
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_quiz);
         timer = findViewById(R.id.timer);
+        startTimer();
+    }
+
+    public void startTimer() {
+        countdown = new CountDownTimer(timeLeft, 1000) {
+            @Override
+            public void onTick(long millisUntilFinished) {
+                timeLeft = millisUntilFinished;
+                updateTimer();
+            }
+
+            @Override
+            public void onFinish() {
+
+            }
+        }.start();
+    }
+    public void updateTimer() {
+        int min = (int) timeLeft / 60000;
+        int sec = (int) timeLeft % 60000 / 1000;
+
+        String timeLeftText = "" + min + ":";
+        if(sec < 10) {
+            timeLeftText += "0";
+        }
+        timeLeftText += sec;
+
+        timer.setText(timeLeftText);
     }
 }
