@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background = "@drawable/pkmn_win"
+    tools:context=".ScoresActivity">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/Lguideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.30" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/Rguideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.70" />
+
+    <TextView
+        android:id="@+id/welcomeText"
+        android:layout_height="wrap_content"
+        android:layout_width="0dp"
+        android:text="@string/win"
+        android:textSize="25sp"
+        android:textColor="#3F51B5"
+        android:textAlignment="center"
+        android:fontFamily="monospace"
+        android:layout_marginTop="85dp"
+        app:layout_constraintLeft_toRightOf="@+id/Lguideline"
+        app:layout_constraintRight_toLeftOf="@+id/Rguideline"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/stats"
+        android:layout_height="wrap_content"
+        android:layout_width="0dp"
+        android:textSize="25sp"
+        android:textColor="#3F51B5"
+        android:textAlignment="center"
+        android:fontFamily="monospace"
+        android:layout_marginTop="15dp"
+        app:layout_constraintLeft_toRightOf="@+id/Lguideline"
+        app:layout_constraintRight_toLeftOf="@+id/Rguideline"
+        app:layout_constraintTop_toBottomOf="@+id/welcomeText" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -16,10 +16,25 @@
         android:textColor="#FFFFFF"
         android:textAlignment="center"
         android:fontFamily="monospace"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="40dp"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        app:layout_constraintTop_toBottomOf="@+id/welcomeText"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:id="@+id/nameResponse"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="monospace"
+        android:backgroundTint="#FFFFFF"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#FFFFFF"
+        android:hint="@string/name_hint"
+        android:gravity="center_horizontal"
+        />
 
     <Button
         android:id="@+id/startButton"
@@ -32,6 +47,6 @@
         android:textSize="25sp"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/welcomeText" />
+        app:layout_constraintTop_toBottomOf="@+id/nameResponse" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">QuizAppV5</string>
+    <string name="app_name">Pokemon Quiz!</string>
     <string name="welcome">Welcome to the Pokemon Quiz!</string>
     <string name="start">Start Quiz!</string>
     <string name="timestart">5:00</string>
@@ -11,4 +11,7 @@
     <string name="q1c4">Tynamo</string>
     <string name="q2c1">Prinplup</string>
     <string name="q2c2">Keldeo</string>
+    <string name="finished">Finish Quiz</string>
+    <string name="name_hint">Enter your name here!</string>
+    <string name="win">Thanks for Playing! Here are your stats:</string>
 </resources>
