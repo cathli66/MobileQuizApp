@@ -7,20 +7,29 @@
     android:background="#FFFFFF"
     tools:context=".QuizActivity">
 
+    <fragment
+        android:id="@+id/instructions"
+        android:name="com.licathryn.quizappv5.TimerFragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"/>
+
     <TextView
         android:id="@+id/timer"
         android:layout_width="129dp"
         android:layout_height="65dp"
-        android:layout_marginTop="10dp"
         android:background="@drawable/pkmn_timer"
         android:fontFamily="monospace"
         android:padding="10dp"
         android:text="@string/timestart"
         android:textAlignment="center"
         android:textSize="30sp"
+        android:layout_marginTop="10dp"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/instructions" />
 
     <ScrollView
         android:id="@+id/scrollView"
@@ -148,6 +157,174 @@
                 android:textSize="20sp"
                 app:layout_constraintTop_toBottomOf="@+id/q2c3" />
 
+
+            <ImageView
+                android:id="@+id/pachirisu"
+                android:layout_width="match_parent"
+                android:layout_height="430dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="100dp"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/pachirisu"
+                app:layout_constraintHeight_percent="10"
+                app:layout_constraintTop_toBottomOf="@+id/q2c4" />
+
+            <Button
+                android:id="@+id/q3c1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="35dp"
+                android:layout_marginEnd="35dp"
+                android:padding="15dp"
+                android:text="@string/q3c1"
+                android:textSize="20sp"
+                app:layout_constraintTop_toBottomOf="@+id/pachirisu" />
+
+            <Button
+                android:id="@+id/q3c2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="35dp"
+                android:layout_marginEnd="35dp"
+                android:padding="15dp"
+                android:text="@string/q3c2"
+                android:textSize="20sp"
+                app:layout_constraintTop_toBottomOf="@+id/q3c1" />
+
+            <Button
+                android:id="@+id/q3c3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="35dp"
+                android:layout_marginEnd="35dp"
+                android:padding="15dp"
+                android:text="@string/q3c3"
+                android:textSize="20sp"
+                app:layout_constraintTop_toBottomOf="@+id/q3c2" />
+
+            <Button
+                android:id="@+id/q3c4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="35dp"
+                android:layout_marginEnd="35dp"
+                android:padding="15dp"
+                android:text="@string/q3c4"
+                android:textSize="20sp"
+                app:layout_constraintTop_toBottomOf="@+id/q3c3" />
+
+
+            <ImageView
+                android:id="@+id/garchomp"
+                android:layout_width="match_parent"
+                android:layout_height="430dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="100dp"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/garchomp"
+                app:layout_constraintHeight_percent="10"
+                app:layout_constraintTop_toBottomOf="@+id/q3c4" />
+
+            <Button
+                android:id="@+id/q4c1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="35dp"
+                android:layout_marginEnd="35dp"
+                android:padding="15dp"
+                android:text="@string/q4c1"
+                android:textSize="20sp"
+                app:layout_constraintTop_toBottomOf="@+id/garchomp" />
+
+            <Button
+                android:id="@+id/q4c2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="35dp"
+                android:layout_marginEnd="35dp"
+                android:padding="15dp"
+                android:text="@string/q4c2"
+                android:textSize="20sp"
+                app:layout_constraintTop_toBottomOf="@+id/q4c1" />
+
+            <Button
+                android:id="@+id/q4c3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="35dp"
+                android:layout_marginEnd="35dp"
+                android:padding="15dp"
+                android:text="@string/q4c3"
+                android:textSize="20sp"
+                app:layout_constraintTop_toBottomOf="@+id/q4c2" />
+
+            <Button
+                android:id="@+id/q4c4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="35dp"
+                android:layout_marginEnd="35dp"
+                android:padding="15dp"
+                android:text="@string/q4c4"
+                android:textSize="20sp"
+                app:layout_constraintTop_toBottomOf="@+id/q4c3" />
+
+
+            <ImageView
+                android:id="@+id/lurantis"
+                android:layout_width="match_parent"
+                android:layout_height="430dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="100dp"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/lurantis"
+                app:layout_constraintHeight_percent="10"
+                app:layout_constraintTop_toBottomOf="@+id/q4c4" />
+
+            <Button
+                android:id="@+id/q5c1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="35dp"
+                android:layout_marginEnd="35dp"
+                android:padding="15dp"
+                android:text="@string/q5c1"
+                android:textSize="20sp"
+                app:layout_constraintTop_toBottomOf="@+id/lurantis" />
+
+            <Button
+                android:id="@+id/q5c2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="35dp"
+                android:layout_marginEnd="35dp"
+                android:padding="15dp"
+                android:text="@string/q5c2"
+                android:textSize="20sp"
+                app:layout_constraintTop_toBottomOf="@+id/q5c1" />
+
+            <Button
+                android:id="@+id/q5c3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="35dp"
+                android:layout_marginEnd="35dp"
+                android:padding="15dp"
+                android:text="@string/q5c3"
+                android:textSize="20sp"
+                app:layout_constraintTop_toBottomOf="@+id/q5c2" />
+
+            <Button
+                android:id="@+id/q5c4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="35dp"
+                android:layout_marginEnd="35dp"
+                android:padding="15dp"
+                android:text="@string/q5c4"
+                android:textSize="20sp"
+                app:layout_constraintTop_toBottomOf="@+id/q5c3" />
+
             <Button
                 android:id="@+id/finished"
                 android:layout_width="match_parent"
@@ -157,9 +334,11 @@
                 android:padding="20dp"
                 android:textColor="#6C4DA7"
                 android:textSize="25sp"
-                app:layout_constraintTop_toBottomOf="@+id/q2c4" />
+                app:layout_constraintTop_toBottomOf="@+id/q5c4" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
     </ScrollView>
+
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

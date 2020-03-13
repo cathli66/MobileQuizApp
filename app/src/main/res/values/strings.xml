@@ -2,16 +2,36 @@
     <string name="app_name">Pokemon Quiz!</string>
     <string name="welcome">Welcome to the Pokemon Quiz!</string>
     <string name="start">Start Quiz!</string>
+    <string name="instructions">You have 1 minute to answer 5 questions. Good luck!</string>
     <string name="timestart">5:00</string>
+
     <string name="q1c1">Togekiss</string>
-    <string name="q2c3">Empoleon</string>
     <string name="q1c2">Cleffa</string>
-    <string name="q2c4">Seaking</string>
     <string name="q1c3">Tropius</string>
     <string name="q1c4">Tynamo</string>
+
     <string name="q2c1">Prinplup</string>
     <string name="q2c2">Keldeo</string>
+    <string name="q2c3">Empoleon</string>
+    <string name="q2c4">Seaking</string>
+
+    <string name="q3c1">Palkia</string>
+    <string name="q3c2">Pichu</string>
+    <string name="q3c3">Pachirisu</string>
+    <string name="q3c4">Pikachu</string>
+
+    <string name="q4c1">Krookodile</string>
+    <string name="q4c2">Garchomp</string>
+    <string name="q4c3">Lycanroc</string>
+    <string name="q4c4">Croconaw</string>
+
+    <string name="q5c1">Bellossom</string>
+    <string name="q5c2">Lilligant</string>
+    <string name="q5c3">Tsareena</string>
+    <string name="q5c4">Lurantis</string>
+
     <string name="finished">Finish Quiz</string>
     <string name="name_hint">Enter your name here!</string>
     <string name="win">Thanks for Playing! Here are your stats:</string>
+    <string name="restart">Play Again!</string>
 </resources>

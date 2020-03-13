@@ -3,8 +3,11 @@ package com.licathryn.quizappv5;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Context;
+import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
 import android.widget.TextView;
 
 import com.google.gson.Gson;
@@ -12,6 +15,7 @@ import com.google.gson.Gson;
 public class ScoresActivity extends AppCompatActivity {
 
     TextView stats;
+    Button restart;
     SharedPreferences sharedPreferences;
     SharedPreferences.Editor editor;
     String playerName;
@@ -25,7 +29,6 @@ public class ScoresActivity extends AppCompatActivity {
         setContentView(R.layout.activity_scores);
 
         stats = findViewById(R.id.stats);
-        Gson gson = new Gson();
 
         sharedPreferences = getSharedPreferences("playerStats", Context.MODE_PRIVATE);
         editor = sharedPreferences.edit();
@@ -44,5 +47,21 @@ public class ScoresActivity extends AppCompatActivity {
         String scoreText = numCorrect + "/5";
 
         stats.setText(playerName + "\nTime: " + timeLeftText + "\nScore: " + scoreText);
+
+        Gson gson = new Gson();
+        Player player = new Player(playerName, numCorrect, timeLeft);
+        String json = gson.toJson(player);
+
+        restart = findViewById(R.id.restartButton);
+        restart.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                firstActivity();
+            }
+        });
+    }
+    public void firstActivity() {
+        Intent intent=new Intent(this, MainActivity.class);
+        startActivity(intent);
     }
 }

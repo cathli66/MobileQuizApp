@@ -26,13 +26,25 @@ public class QuizActivity extends AppCompatActivity {
     Button q2c2;
     Button q2c3;
     Button q2c4;
+    Button q3c1;
+    Button q3c2;
+    Button q3c3;
+    Button q3c4;
+    Button q4c1;
+    Button q4c2;
+    Button q4c3;
+    Button q4c4;
+    Button q5c1;
+    Button q5c2;
+    Button q5c3;
+    Button q5c4;
     Button finished;
 
     SharedPreferences sharedPreferences;
     SharedPreferences.Editor editor;
     int numCorrect = 0;
     int numAnswered = 0;
-    long timeLeft = 300000; // 5 min in milliseconds
+    long timeLeft = 60000; // 1 min in milliseconds
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -148,12 +160,168 @@ public class QuizActivity extends AppCompatActivity {
                 numAnswered++;
             }
         });
+        q3c1 = findViewById(R.id.q3c1);
+        q3c1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                q3c1.setClickable(false);
+                q3c1.setBackgroundColor(Color.RED);
+                q3c2.setClickable(false);
+                q3c3.setClickable(false);
+                q3c3.setBackgroundColor(Color.GREEN);
+                q3c4.setClickable(false);
+                numAnswered++;
+            }
+        });
+        q3c2 = findViewById(R.id.q3c2);
+        q3c2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                q3c1.setClickable(false);
+                q3c2.setClickable(false);
+                q3c2.setBackgroundColor(Color.RED);
+                q3c3.setClickable(false);
+                q3c3.setBackgroundColor(Color.GREEN);
+                q3c4.setClickable(false);
+                numAnswered++;
+            }
+        });
+        q3c3 = findViewById(R.id.q3c3);
+        q3c3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                q3c1.setClickable(false);
+                q3c2.setClickable(false);
+                q3c3.setClickable(false);
+                q3c3.setBackgroundColor(Color.GREEN);
+                q3c4.setClickable(false);
+                numCorrect++;
+                numAnswered++;
+            }
+        });
+        q3c4 = findViewById(R.id.q3c4);
+        q3c4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                q3c1.setClickable(false);
+                q3c2.setClickable(false);
+                q3c3.setClickable(false);
+                q3c3.setBackgroundColor(Color.GREEN);
+                q3c4.setClickable(false);
+                q3c4.setBackgroundColor(Color.RED);
+                numAnswered++;
+            }
+        });
+        q4c1 = findViewById(R.id.q4c1);
+        q4c1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                q4c1.setClickable(false);
+                q4c1.setBackgroundColor(Color.RED);
+                q4c2.setClickable(false);
+                q4c2.setBackgroundColor(Color.GREEN);
+                q4c3.setClickable(false);
+                q4c4.setClickable(false);
+                numAnswered++;
+            }
+        });
+        q4c2 = findViewById(R.id.q4c2);
+        q4c2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                q4c1.setClickable(false);
+                q4c2.setClickable(false);
+                q4c2.setBackgroundColor(Color.GREEN);
+                q4c3.setClickable(false);
+                q4c4.setClickable(false);
+                numCorrect++;
+                numAnswered++;
+            }
+        });
+        q4c3 = findViewById(R.id.q4c3);
+        q4c3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                q4c1.setClickable(false);
+                q4c2.setClickable(false);
+                q4c2.setBackgroundColor(Color.GREEN);
+                q4c3.setClickable(false);
+                q4c3.setBackgroundColor(Color.RED);
+                q4c4.setClickable(false);
+                numAnswered++;
+            }
+        });
+        q4c4 = findViewById(R.id.q4c4);
+        q4c4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                q4c1.setClickable(false);
+                q4c2.setClickable(false);
+                q4c2.setBackgroundColor(Color.GREEN);
+                q4c3.setClickable(false);
+                q4c4.setClickable(false);
+                q4c4.setBackgroundColor(Color.RED);
+                numAnswered++;
+            }
+        });
+        q5c1 = findViewById(R.id.q5c1);
+        q5c1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                q5c1.setClickable(false);
+                q5c1.setBackgroundColor(Color.RED);
+                q5c2.setClickable(false);
+                q5c3.setClickable(false);
+                q5c4.setClickable(false);
+                q5c4.setBackgroundColor(Color.GREEN);
+                numAnswered++;
+            }
+        });
+        q5c2 = findViewById(R.id.q5c2);
+        q5c2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                q5c1.setClickable(false);
+                q5c2.setClickable(false);
+                q5c2.setBackgroundColor(Color.RED);
+                q5c3.setClickable(false);
+                q5c4.setClickable(false);
+                q5c4.setBackgroundColor(Color.GREEN);
+                numAnswered++;
+            }
+        });
+        q5c3 = findViewById(R.id.q5c3);
+        q5c3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                q5c1.setClickable(false);
+                q5c2.setClickable(false);
+                q5c3.setClickable(false);
+                q5c3.setBackgroundColor(Color.RED);
+                q5c4.setClickable(false);
+                q5c4.setBackgroundColor(Color.GREEN);
+                numAnswered++;
+            }
+        });
+        q5c4 = findViewById(R.id.q5c4);
+        q5c4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                q5c1.setClickable(false);
+                q5c2.setClickable(false);
+                q5c3.setClickable(false);
+                q5c4.setClickable(false);
+                q5c4.setBackgroundColor(Color.GREEN);
+                numCorrect++;
+                numAnswered++;
+            }
+        });
 
         finished = findViewById(R.id.finished);
         finished.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if(numAnswered == 2) {
+                if(numAnswered == 5) {
                     editor.putLong("time", timeLeft);
                     editor.putInt("correct", numCorrect);
                     editor.putInt("answered", numAnswered);
@@ -177,7 +345,7 @@ public class QuizActivity extends AppCompatActivity {
 
             @Override
             public void onFinish() {
-                editor.putInt("time", 0);
+                editor.putLong("time", 0);
                 editor.putInt("correct", numCorrect);
                 editor.putInt("answered", numAnswered);
                 editor.apply();
